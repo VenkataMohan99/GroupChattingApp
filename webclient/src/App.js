@@ -9,8 +9,8 @@ export default function App(){
     <div className='App'>
       <BrowserRouter>
       <Routes>
-        <Route path='/' element={<LoginForm></LoginForm>}></Route>
-        <Route path='/signUpForm' element={<SignupForm></SignupForm>}></Route>
+        <Route path='/' element={<SignupForm></SignupForm>}></Route>
+        <Route path='/login' element={<LoginForm></LoginForm> }></Route>
         <Route path='/dashBoard' element={<DashBoard></DashBoard>}></Route>
         <Route path='/updateProfile' element={<ProfileUpdate></ProfileUpdate>}></Route>
       </Routes>

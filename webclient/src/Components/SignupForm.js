@@ -108,7 +108,7 @@ function SignupForm() {
             }}>Sign Up</button>
                 </fieldset>
             </form>
-            <Link to='/'>Login</Link>
+            <Link to='/login'>Login</Link>
     </div>
   )
 }
