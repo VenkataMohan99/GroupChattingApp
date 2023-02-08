@@ -20,7 +20,7 @@ const storage = multer.diskStorage({
       cb(null, 'uploads')
     },
     filename: function (req, file, cb) {
-      cb(null, Date.now()+"-"+file.originalname);
+      cb(null, Date.now() + "-"+ file.originalname);
     }
   })
   
@@ -66,7 +66,7 @@ let newUser=await new user({
     userName:req.body.userName,
     emailId:req.body.emailId,
     password:hashPassword, 
-    profilePic:req.file.path
+    profilePic:req.body.profilePic
 })
 
    await newUser.save();
