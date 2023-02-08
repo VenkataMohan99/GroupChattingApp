@@ -48,7 +48,7 @@ alert(response.data.status);
                 </fieldset>
             </form>
             <br></br>
-            <Link to='/' style={{backgroundColor:"white",textDecoration:"none",borderRadius:"5px",padding:"3px"}}>Create New Account</Link>
+            <Link to='/signUpForm' style={{backgroundColor:"white",textDecoration:"none",borderRadius:"5px",padding:"3px"}}>Create New Account</Link>
         </div>
     )
 }
