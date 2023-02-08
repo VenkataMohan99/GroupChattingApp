@@ -29,6 +29,8 @@ const storage = multer.diskStorage({
 let connection=async ()=>{
     try{
 await mongoose.connect(`mongodb+srv://Mohan:${process.env.DB_PASSWORD}@cluster0.86ujkq9.mongodb.net/groupchattingapp`)
+//mongodb+srv://Mohan:${process.env.DB_PASSWORD}@cluster0.86ujkq9.mongodb.net/?retryWrites=true&w=majority
+//mongodb+srv://Mohan:<password>@cluster0.86ujkq9.mongodb.net/test
 console.log("Successfully connected to MDB")  
 }catch(error){
     console.log("Unable to connect to MDB") 
